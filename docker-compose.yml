@@ -1,0 +1,26 @@
+version: '3'
+
+volumes:
+  pg_data: {}
+
+services:
+  bot:
+    container_name: "lyrics_bot"
+    image: fumaz/lyrics-python
+    build: .
+    working_dir: /usr/src/app
+    volumes:
+      - ./src:/usr/src/app
+    depends_on:
+      - postgres
+    restart: unless-stopped
+    command: python3 run.py
+  postgres:
+    container_name: "lyrics_db"
+    image: postgres
+    volumes:
+      - pg_data:/var/lib/postgresql/data
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: 'lyrics'
+      POSTGRES_HOST_AUTH_METHOD: 'trust'

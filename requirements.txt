@@ -1,0 +1,10 @@
+lxml
+bs4
+requests
+tgcrypto
+psycopg2-binary
+pony
+telegraph
+bleach
+selenium
+pyrogram
