@@ -5,7 +5,7 @@ It works both in private chats and inline!
 
 ### How do I find a song?
 Simply start the bot on Telegram (https://t.me/LyricsSeekerBot) and click on the "Search" button. Then, type a song, an artist or an album!<br>
-You can also use the bot inline by typing "@LyricsSeekerBot <song>" in any chat!
+You can also use the bot inline by typing "@LyricsSeekerBot (song)" in any chat!
 
 ### What does it show?
 The bot is able to display...
