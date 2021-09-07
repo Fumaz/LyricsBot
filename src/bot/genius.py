@@ -23,7 +23,7 @@ def search(query: str, user: User = None, type: str = 'inline', limit: int = 50)
 def lyrics(song) -> str:
     l = api.ovhlyrics(song.artist.name, song.title)
 
-    if not l:
-        l = api.geniuslyrics(song.genius_id)
+    # if not l:
+    #    l = api.geniuslyrics(song.genius_id)
 
     return l
